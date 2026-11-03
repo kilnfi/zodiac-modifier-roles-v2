@@ -23,6 +23,7 @@
     "deploy:zkevm": "yarn prepare:zkevm && bash -c 'source .env || true && graph deploy $SUBGRAPH_ZKEVM'",
     "deploy:bsc": "yarn prepare:bsc && bash -c 'source .env || true && graph deploy $SUBGRAPH_BSC'",
     "deploy:arc": "yarn prepare:arc && bash -c 'source .env || true && graph deploy $SUBGRAPH_ARC subgraph.arc.yaml'",
+    "deploy:katana": "yarn prepare:katana && bash -c 'source .env || true && graph deploy $SUBGRAPH_KATANA subgraph.katana.yaml'",
     "prepare:mainnet": "mustache networks/mainnet.json subgraph.template.yaml > subgraph.yaml",
     "prepare:sepolia": "mustache networks/sepolia.json subgraph.template.yaml > subgraph.yaml",
     "prepare:gnosis": "mustache networks/gnosis.json subgraph.template.yaml > subgraph.yaml",
@@ -37,7 +38,8 @@
     "prepare:polygon": "mustache networks/polygon.json subgraph.template.yaml > subgraph.yaml",
     "prepare:zkevm": "mustache networks/polygon-zkevm.json subgraph.template.yaml > subgraph.yaml",
     "prepare:bsc": "mustache networks/bsc.json subgraph.template.yaml > subgraph.yaml",
-    "prepare:arc": "mustache networks/arc.json subgraph.template.yaml > subgraph.arc.yaml"
+    "prepare:arc": "mustache networks/arc.json subgraph.template.yaml > subgraph.arc.yaml",
+    "prepare:katana": "mustache networks/katana.json subgraph.template.yaml > subgraph.katana.yaml"
   },
   "devDependencies": {
     "mustache": "^4.2.0",
