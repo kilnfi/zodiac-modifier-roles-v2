@@ -17,3 +17,8 @@ packages/sdk/eth-sdk/tmp
 .turbo
 # local Claude Code worktrees
 .claude/worktrees/
+
+
+# This will be generated from the template on deployment (to support multiple networks)
+packages/subgraph/subgraph.yaml
+packages/subgraph/generated
