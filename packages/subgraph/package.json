@@ -3,7 +3,7 @@
   "private": true,
   "license": "LGPL-3.0+",
   "scripts": {
-    "prepare": "yarn prepare:mainnet && graph codegen",
+    "codegen": "yarn prepare:mainnet && graph codegen",
     "build": "graph build",
     "format": "prettier '(test|src)/**/*.ts' -w",
     "pre-commit": "yarn format",
@@ -22,6 +22,7 @@
     "deploy:polygon": "yarn prepare:polygon && bash -c 'source .env || true && graph deploy $SUBGRAPH_POLYGON'",
     "deploy:zkevm": "yarn prepare:zkevm && bash -c 'source .env || true && graph deploy $SUBGRAPH_ZKEVM'",
     "deploy:bsc": "yarn prepare:bsc && bash -c 'source .env || true && graph deploy $SUBGRAPH_BSC'",
+    "deploy:arc": "yarn prepare:arc && bash -c 'source .env || true && graph deploy $SUBGRAPH_ARC subgraph.arc.yaml'",
     "prepare:mainnet": "mustache networks/mainnet.json subgraph.template.yaml > subgraph.yaml",
     "prepare:sepolia": "mustache networks/sepolia.json subgraph.template.yaml > subgraph.yaml",
     "prepare:gnosis": "mustache networks/gnosis.json subgraph.template.yaml > subgraph.yaml",
@@ -35,7 +36,8 @@
     "prepare:base-sepolia": "mustache networks/base-sepolia.json subgraph.template.yaml > subgraph.yaml",
     "prepare:polygon": "mustache networks/polygon.json subgraph.template.yaml > subgraph.yaml",
     "prepare:zkevm": "mustache networks/polygon-zkevm.json subgraph.template.yaml > subgraph.yaml",
-    "prepare:bsc": "mustache networks/bsc.json subgraph.template.yaml > subgraph.yaml"
+    "prepare:bsc": "mustache networks/bsc.json subgraph.template.yaml > subgraph.yaml",
+    "prepare:arc": "mustache networks/arc.json subgraph.template.yaml > subgraph.arc.yaml"
   },
   "devDependencies": {
     "mustache": "^4.2.0",
