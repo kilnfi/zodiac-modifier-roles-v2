@@ -11,7 +11,7 @@ dataSources:
     source:
       abi: Roles
       # prettier-ignore
-      startBlock: 19767679
+      startBlock: 24782544
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -49,7 +49,7 @@ dataSources:
     source:
       abi: PermissionBuilder
       # prettier-ignore
-      startBlock: 19767679
+      startBlock: 24782544
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -87,7 +87,7 @@ dataSources:
     source:
       abi: AllowanceTracker
       # prettier-ignore
-      startBlock: 19767679
+      startBlock: 24782544
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -108,7 +108,7 @@ dataSources:
     source:
       abi: Periphery
       # prettier-ignore
-      startBlock: 19767679
+      startBlock: 24782544
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -130,7 +130,7 @@ dataSources:
       address: "0x000000000000cd17345801aa8147b8D3950260FF"
       abi: Poster
       # prettier-ignore
-      startBlock: 19767679
+      startBlock: 24782544
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
